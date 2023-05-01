@@ -1,0 +1,27 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+
+.box{
+    max-width: 640px;
+    min-height: 400px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.box .title {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 4px;
+    margin: 6px 0;
+}
+
+img.icon{
+    max-width: 40px;
+}

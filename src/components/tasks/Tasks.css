@@ -1,0 +1,11 @@
+.task-item{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.task-item .content{
+    flex-grow: 1;
+}
