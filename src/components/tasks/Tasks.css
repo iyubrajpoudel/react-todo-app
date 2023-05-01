@@ -1,11 +1,17 @@
-.task-item{
+.task-item {
     display: flex;
+    /* justify-content: center; */
+    align-items: center;
     gap: 1rem;
     font-size: 1.2rem;
     font-weight: 500;
     color: #555;
+    cursor: pointer;
+    padding: 4px;
+    margin: 8px 0;
+    user-select: none;
 }
 
-.task-item .content{
+.task-item .content {
     flex-grow: 1;
 }

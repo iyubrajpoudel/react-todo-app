@@ -14,10 +14,10 @@ const InputField = ({ type, id, name, placeholder, value, onChange }) => {
     )
 }
 
-const Button = ({ children, id }) => {
+const Button = ({ children, id, onClick }) => {
     return (
         <>
-            <button id={id}>{children}</button>
+            <button id={id} onClick={onClick}>{children}</button>
         </>
     )
 }
@@ -34,21 +34,34 @@ const Input = () => {
     const [tasks, setTasks] = useTasksData();
 
     // states
-    const [task, setTask] = useState();
+    const [task, setTask] = useState("");
 
     //useeffect
 
-    useEffect(() => {
-        console.log(tasks);
-    }
-        , [])
+    // useEffect(() => {
+    //     console.log(tasks);
+    // }
+    //     , [])
 
 
-    // const handleChange = (e) => {setTask(e.target.value)}
+    // const handleChange = (e) => { setTask(e.target.value) }
 
-    const handleAdd = () => {
-        setTasks(tasks.push(task));
-        console.log(tasks);
+    //targets
+    const taskInput = document.getElementById("taskInput");
+
+    const handleAdd = (e) => {
+        // console.log("clicked!");
+        // console.log(tasks);
+        if (task === "") {
+            alert("Enter task to add..");
+            return taskInput.focus();
+        }
+        // let newtasks = tasks.push(task);
+        // setTasks(tasks.push(task));
+        setTasks([...tasks, task]);
+        // console.log(tasks);
+        setTask("")
+        taskInput.focus();
     }
 
     return (
