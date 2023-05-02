@@ -77,7 +77,7 @@ package.json will looks like
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
   "homepage": "https://github.com/iyubrajpoudel/react-to-do-app"
 }
 ```
