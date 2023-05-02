@@ -16,6 +16,9 @@ const Task = ({ content, index }) => {
     // setTasks(...tasks.splice(index, 1))
     const temp = tasks.filter((item, i) => i !== index);
     setTasks(temp);
+
+    // update tasks data on local storage too
+    localStorage.setItem("tasksData", JSON.stringify(temp));
   }
 
   return (

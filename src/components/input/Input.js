@@ -49,7 +49,7 @@ const Input = () => {
     //targets
     const taskInput = document.getElementById("taskInput");
 
-    const handleAdd = (e) => {
+    const handleAdd = async (e) => {
         // console.log("clicked!");
         // console.log(tasks);
         if (task === "") {
@@ -60,8 +60,20 @@ const Input = () => {
         // setTasks(tasks.push(task));
         setTasks([...tasks, task]);
         // console.log(tasks);
+
+        // saving tasks in localstorage
+        const saveData = () => {
+            // localStorage.setItem("tasksData", JSON.stringify(tasks));
+            localStorage.setItem("tasksData", JSON.stringify([...tasks, task]));
+        }
+        saveData();
+        // await saveData();
+
+        // await localStorage.setItem("tasksData", JSON.stringify(tasks))
+
         setTask("")
         taskInput.focus();
+
     }
 
     return (
