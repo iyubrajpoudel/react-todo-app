@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/iyubrajpoudel/react-to-do-app/static/css/main.38509e73.css",
+    "main.js": "/iyubrajpoudel/react-to-do-app/static/js/main.8c05c6fc.js",
+    "index.html": "/iyubrajpoudel/react-to-do-app/index.html",
+    "main.38509e73.css.map": "/iyubrajpoudel/react-to-do-app/static/css/main.38509e73.css.map",
+    "main.8c05c6fc.js.map": "/iyubrajpoudel/react-to-do-app/static/js/main.8c05c6fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38509e73.css",
+    "static/js/main.8c05c6fc.js"
+  ]
+}

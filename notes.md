@@ -82,7 +82,7 @@ package.json will looks like
 }
 ```
 
-## Commit changes (optional)
+## Commit changes
 
 ```bash
 git add .
