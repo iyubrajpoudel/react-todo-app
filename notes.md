@@ -1,3 +1,42 @@
+# Publish React App to Github Pages
+
+## Install gh-pages
+
+```
+npm install gh-pages
+```
+or 
+```
+npm install gh-pages --save-dev
+```
+
+## Add github repository path to homepage property
+
+In the package.json file, add a homepage property that follows this structure:  
+http://{github-username}.github.io/{repo-name}
+
+In my case its : https://github.com/iyubrajpoudel/react-to-do-app
+
+I will add a homepage property with value as repo path
+
+```json
+"homepage": "https://github.com/iyubrajpoudel/react-to-do-app"
+```
+
+## Add predeploy and deploy scripts to scripts property in package.json
+
+```
+"scripts": {
+    ...
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
+}
+
+```
+
+package.json will looks like
+
+```json
 {
   "name": "react-to-do-app",
   "version": "0.1.0",
@@ -41,3 +80,24 @@
   }
   "homepage": "https://github.com/iyubrajpoudel/react-to-do-app"
 }
+```
+
+## Commit changes (optional)
+
+```bash
+git add .
+```
+```bash
+git commit -m "setup gh-pages"
+```
+```bash
+git push
+```
+
+## Deploy using deploy script
+
+Simply run `npm run deploy` command to deploy to github pages.
+
+```
+npm run deploy
+```
