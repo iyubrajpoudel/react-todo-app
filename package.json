@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.com/iyubrajpoudel/react-to-do-app",
   "name": "react-to-do-app",
   "version": "0.1.0",
   "private": true,
@@ -38,6 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "homepage": "https://github.com/iyubrajpoudel/react-todo-app"
+  }
 }
